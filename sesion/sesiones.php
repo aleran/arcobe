@@ -40,7 +40,7 @@ Correo: edg.sistemas@gmail.com
 			header("location: ../index2.php");
 		}
 	
-	if($row['activo']=='0'){
+	if($row['usuario_activo']=='0'){
 		header("location: ../index.php?error=2");
 	}
 	if($user!=$row['usuario_user'] or md5($pass)!=$row['usuario_clave']){

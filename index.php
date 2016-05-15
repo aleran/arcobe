@@ -71,6 +71,13 @@ alert('¡Usuario o Contraseña inválido!');
 </script>
 ";
 }
+if(array_key_exists('error',$_GET) and $_GET['error']=='2'){
+echo "
+<script>
+alert('¡Usuario suspendido!');
+</script>
+";
+}
 if(array_key_exists('error',$_GET) and $_GET['error']=='4'){
 echo "
 <script>

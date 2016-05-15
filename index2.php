@@ -91,6 +91,7 @@ Correo: edg.sistemas@gmail.com
 			}
 				?>
 		</li>
+
 		<?php
 		if($_SESSION['rol_periodo']==1 || $_SESSION['rol_cperiodo']==1 || $_SESSION['rol_ce']==1){
 		?>
@@ -116,6 +117,24 @@ Correo: edg.sistemas@gmail.com
 				<?php
 				}
 			}
+				?>
+			</ul>
+		</li>
+		<?php
+		if($_SESSION['rol_periodo']==1){
+		?>
+		<li class='principal'>Usuarios
+			<ul class="secundario">
+				
+				<li onclick="location.href='./ingresar/crear_usuarios.php'">Crear Usuarios</li>
+				
+				
+				
+				<li onclick="location.href='./consultas/editar_usuarios.php'">Editar Usuarios</li>
+				<?php
+				}
+				
+			
 				?>
 			</ul>
 		</li>
